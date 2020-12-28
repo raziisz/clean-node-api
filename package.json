@@ -4,7 +4,21 @@
   "main": "index.js",
   "author": "Luiz Felipe Carvalho Libertino <raziel_libertino@hotmail.com>",
   "license": "MIT",
+  "scripts": {},
+  "lint-staged": {
+    "*.js": [
+      "standard --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "devDependencies": {
+    "husky": "^5.0.6",
+    "lint-staged": "^10.5.3",
     "standard": "^16.0.3"
   }
 }
