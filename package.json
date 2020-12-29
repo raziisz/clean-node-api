@@ -5,8 +5,8 @@
   "author": "Luiz Felipe Carvalho Libertino <raziel_libertino@hotmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "jest --watchAll",
-    "test:staged": "jest"
+    "test": "jest --watchAll --silent --noStackTrace",
+    "test:staged": "jest --passWithNoTests --findRelatedTests --silent --noStackTrace" 
   },
   "standard": {
     "env": ["jest"]
