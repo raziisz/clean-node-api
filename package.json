@@ -5,11 +5,11 @@
   "author": "Luiz Felipe Carvalho Libertino <raziel_libertino@hotmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "jest --watchAll --silent --noStackTrace --passWithNoTests",
+    "test": "jest --colors --noStackTrace --passWithNoTests",
     "test:unit": "npm test -- --watch -c jest-unit-config.js",
     "test:integration": "npm test -- --watch -c jest-integration-config.js",
     "test:staged": "npm test -- --findRelatedTests",
-    "test:ci": "npm test -- --coverage"
+    "test:ci": "npm test -- --coverage --silent"
   },
   "standard": {
     "env": [
